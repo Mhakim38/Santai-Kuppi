@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private org data (kept in secret_information, never in git)
+company/organisation.json
+public/company/

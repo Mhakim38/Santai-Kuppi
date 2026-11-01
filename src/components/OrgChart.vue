@@ -1,21 +1,57 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import OrgNode from './OrgNode.vue'
-import { organisation } from '../data/organisation'
 
-// Mobile accordion state. First team open by default so content is never blank.
-const open = ref(Object.fromEntries(organisation.teams.map((t, i) => [t.id, i === 0])))
+// Org data is fetched at runtime (never bundled, never in git).
+const organisation = ref(null)
+const status = ref('loading') // loading | ready | error
+const open = ref({})
+
+const load = async () => {
+  status.value = 'loading'
+  try {
+    const res = await fetch('./organisation.json', { cache: 'no-store' })
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const data = await res.json()
+    // Mobile accordion: first team open by default so content is never blank.
+    open.value = Object.fromEntries(data.teams.map((t, i) => [t.id, i === 0]))
+    organisation.value = data
+    status.value = 'ready'
+  } catch {
+    status.value = 'error'
+  }
+}
+
+onMounted(load)
+
 const toggle = (id) => {
   open.value[id] = !open.value[id]
 }
 
 // Odd team count: centre the last card on the 2-column tablet grid.
 const lastSpansTablet = (index) =>
-  organisation.teams.length % 2 === 1 && index === organisation.teams.length - 1
+  organisation.value.teams.length % 2 === 1 && index === organisation.value.teams.length - 1
 </script>
 
 <template>
-  <ul aria-label="Santai Kuppi organisation chart" class="org flex flex-col items-center w-full">
+  <p v-if="status === 'loading'" role="status" class="text-center text-coffee-100">
+    <i class="fas fa-spinner fa-spin mr-2" aria-hidden="true"></i>Loading team...
+  </p>
+  <div
+    v-else-if="status === 'error'"
+    role="status"
+    class="backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl p-6 max-w-xl mx-auto text-center"
+  >
+    <p class="text-white mb-4"><i class="fas fa-circle-exclamation mr-2" aria-hidden="true"></i>The team chart could not be loaded.</p>
+    <button
+      type="button"
+      @click="load"
+      class="px-8 py-4 backdrop-blur-lg bg-white/10 border-2 border-white/30 text-white rounded-full font-semibold hover:bg-white/20 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-coffee-900"
+    >
+      Try again
+    </button>
+  </div>
+  <ul v-else aria-label="Santai Kuppi organisation chart" class="org flex flex-col items-center w-full">
     <li class="w-full flex justify-center">
       <OrgNode :person="organisation.founder" />
     </li>
@@ -26,7 +62,8 @@ const lastSpansTablet = (index) =>
     <li class="w-px h-8 bg-white/20" aria-hidden="true"></li>
 
     <li class="w-full">
-      <ul class="org-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 relative">
+      <ul class="org-row grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 relative"
+        :style="{ '--n': organisation.teams.length, '--inset': `${50 / organisation.teams.length}%` }">
         <li
           v-for="(team, index) in organisation.teams"
           :key="team.id"
@@ -71,7 +108,7 @@ const lastSpansTablet = (index) =>
                 'px-6 pb-5 pt-4 border-t border-white/10 space-y-3 md:border-t-0 md:pb-6 lg:px-0 lg:pb-0 lg:pt-4 lg:flex lg:flex-col lg:items-center',
               ]"
             >
-              <OrgNode :person="team.manager" />
+              <OrgNode v-if="team.manager" :person="team.manager" />
               <ul class="org-members space-y-3 lg:border-l lg:border-white/20 lg:ml-6 lg:pl-4 lg:mt-4 lg:self-center">
                 <li v-for="member in team.members" :key="member.name">
                   <OrgNode :person="member" />
@@ -88,6 +125,9 @@ const lastSpansTablet = (index) =>
 <style scoped>
 /* Desktop connectors: drop line per team, horizontal bar across the row */
 @media (min-width: 1024px) {
+  .org-row {
+    grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+  }
   .org-team::before {
     content: '';
     position: absolute;
@@ -101,8 +141,8 @@ const lastSpansTablet = (index) =>
     content: '';
     position: absolute;
     top: 0;
-    left: 16.66%;
-    right: 16.66%;
+    left: var(--inset);
+    right: var(--inset);
     border-top: 1px solid rgb(255 255 255 / 0.2);
   }
 }
