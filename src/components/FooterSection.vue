@@ -4,8 +4,7 @@ const currentYear = new Date().getFullYear()
 const quickLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Services', href: '#services' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Testimonials', href: '#testimonials' }
+  { name: 'Projects', href: '#projects' }
 ]
 
 const resources = [

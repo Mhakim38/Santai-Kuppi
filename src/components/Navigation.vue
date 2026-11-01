@@ -5,7 +5,6 @@ const navItems = [
   { name: 'Home', icon: 'fa-home', href: '#home' },
   { name: 'Services', icon: 'fa-briefcase', href: '#services' },
   { name: 'Projects', icon: 'fa-folder-open', href: '#projects' },
-  { name: 'Testimonials', icon: 'fa-star', href: '#testimonials' },
   { name: 'FAQ', icon: 'fa-question-circle', href: '#faq' },
   { name: 'Contact', icon: 'fa-envelope', href: '#contact' },
 ]
