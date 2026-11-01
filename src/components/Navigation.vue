@@ -4,6 +4,7 @@ import { ref } from 'vue'
 const navItems = [
   { name: 'Home', icon: 'fa-home', href: '#home' },
   { name: 'Services', icon: 'fa-briefcase', href: '#services' },
+  { name: 'Company', icon: 'fa-sitemap', href: '#company' },
   { name: 'FAQ', icon: 'fa-question-circle', href: '#faq' },
   { name: 'Contact', icon: 'fa-envelope', href: '#contact' },
 ]
