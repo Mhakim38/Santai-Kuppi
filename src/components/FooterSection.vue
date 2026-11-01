@@ -1,4 +1,6 @@
 <script setup>
+import { contactLinks } from '../data/contact'
+
 const currentYear = new Date().getFullYear()
 
 const quickLinks = [
@@ -62,9 +64,14 @@ const resources = [
         <div>
           <h3 class="text-white font-semibold mb-4">Get In Touch</h3>
           <ul class="space-y-3 text-sm">
-            <li>
-              <a href="#contact" class="text-coffee-300 hover:text-tech-blue-400 transition-colors">
-                Contact us
+            <li v-for="link in contactLinks" :key="link.name">
+              <a
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-coffee-300 hover:text-tech-blue-400 transition-colors"
+              >
+                <i :class="[link.icon, 'mr-2']" aria-hidden="true"></i>{{ link.name }}
               </a>
             </li>
           </ul>
