@@ -3,6 +3,8 @@ import { useScrollReveal } from './composables/useScrollReveal'
 import AnimatedBackground from './components/AnimatedBackground.vue'
 import Navigation from './components/Navigation.vue'
 import HeroPage from './components/HeroPage.vue'
+import AboutSection from './components/AboutSection.vue'
+import WorkSection from './components/WorkSection.vue'
 import ServicesSection from './components/ServicesSection.vue'
 import FaqSection from './components/FaqSection.vue'
 import ContactSection from './components/ContactSection.vue'
@@ -18,6 +20,8 @@ useScrollReveal()
     <Navigation />
     <main>
       <HeroPage />
+      <AboutSection />
+      <WorkSection />
       <ServicesSection />
       <FaqSection />
       <ContactSection />
