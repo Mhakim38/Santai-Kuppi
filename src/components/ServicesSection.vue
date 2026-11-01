@@ -3,32 +3,32 @@ const services = [
   {
     icon: 'fa-globe',
     title: 'Custom Website Development',
-    description: 'Tailored websites built from scratch to match your unique vision and business needs. Modern, fast, and scalable solutions.'
+    description: 'We build your site from scratch around your goals, with clean code that is easy to grow.'
   },
   {
     icon: 'fa-user-tie',
     title: 'Portfolio Websites',
-    description: 'Stunning portfolio sites that showcase your work and help you stand out. Perfect for creatives, freelancers, and professionals.'
+    description: 'A portfolio that shows your work clearly, for creatives, freelancers and professionals.'
   },
   {
     icon: 'fa-mobile-alt',
     title: 'Responsive Design',
-    description: 'Mobile-first designs that look perfect on every device. Seamless experience across desktop, tablet, and mobile.'
+    description: 'Mobile-first layouts that work on phones, tablets and desktops.'
   },
   {
     icon: 'fa-search',
     title: 'SEO Optimization',
-    description: 'Built-in SEO best practices to help your website rank higher and reach more people. Get found by your target audience.'
+    description: 'Semantic markup, proper titles and meta descriptions, and sensible structure so search engines can understand your site.'
   },
   {
     icon: 'fa-rocket',
     title: 'Performance Optimization',
-    description: 'Lightning-fast loading times and smooth interactions. Optimized for the best user experience and conversion rates.'
+    description: 'We keep pages light and interactions smooth, so visitors are not left waiting.'
   },
   {
     icon: 'fa-wrench',
     title: 'Maintenance & Support',
-    description: 'Ongoing support and updates to keep your website running smoothly. Peace of mind with reliable technical assistance.'
+    description: 'We stay available after launch for updates, fixes and content changes. [SUPPORT TERMS - Hakim]'
   }
 ]
 </script>
@@ -39,10 +39,10 @@ const services = [
       <!-- Section Header -->
       <div class="text-center mb-16 reveal-element">
         <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
-          What I Can Do For You
+          What We Can Do For You
         </h2>
         <p class="text-lg sm:text-xl text-coffee-300 max-w-2xl mx-auto">
-          Professional web development services tailored to solve your problems and bring your vision to life
+          We build websites and web apps for people and small businesses. Here is what we can do for you.
         </p>
       </div>
 

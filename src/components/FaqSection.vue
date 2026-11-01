@@ -4,27 +4,27 @@ import { ref } from 'vue'
 const faqs = [
   {
     question: 'What services do you offer?',
-    answer: 'I offer custom website development, portfolio websites, responsive design, SEO optimization, performance optimization, and ongoing maintenance & support. Each project is tailored to meet your specific needs and goals.',
+    answer: 'We offer custom website development, portfolio websites, responsive design, SEO, performance optimization, and ongoing maintenance and support. Every project is shaped around your needs.',
     open: false
   },
   {
-    question: 'How long does it take to build a website?',
-    answer: 'Timeline varies based on project complexity. A simple portfolio site typically takes 1-2 weeks, while a more complex web application can take 4-8 weeks. I\'ll provide a detailed timeline during our initial consultation.',
+    question: 'How long does a project take?',
+    answer: 'It depends on the size of the project. We give you an estimate after we understand what you need. [TYPICAL TIMELINES - Hakim]',
     open: false
   },
   {
-    question: 'What is your development process?',
-    answer: 'My process includes: 1) Discovery & Planning, 2) Design & Prototyping, 3) Development & Testing, 4) Launch & Deployment, 5) Training & Support. I keep you involved throughout and provide regular updates.',
+    question: 'What is your process?',
+    answer: 'We work in four steps: plan, design, build, then test and ship. You are kept in the loop at each step.',
     open: false
   },
   {
-    question: 'Do you provide ongoing support after launch?',
-    answer: 'Yes! I offer various maintenance and support packages to keep your website running smoothly. This includes updates, bug fixes, content changes, and technical assistance whenever you need it.',
+    question: 'Do you support the site after launch?',
+    answer: 'Yes. We can help with updates, bug fixes and content changes after launch. [SUPPORT PACKAGES / PRICING - Hakim]',
     open: false
   },
   {
-    question: 'Can you help with SEO and getting found online?',
-    answer: 'Absolutely! All websites I build follow SEO best practices including semantic HTML, optimized meta tags, fast loading times, and mobile responsiveness. I can also provide additional SEO consulting if needed.',
+    question: 'Can you help with SEO?',
+    answer: 'Yes. We build with semantic HTML, proper meta tags and responsive layouts from the start. [EXTRA SEO CONSULTING OFFER - Hakim confirm]',
     open: false
   }
 ]
@@ -43,7 +43,7 @@ const toggleFaq = (index) => {
           Frequently Asked Questions
         </h2>
         <p class="text-lg sm:text-xl text-coffee-300">
-          Got questions? I've got answers. Find common questions below.
+          Questions we hear often. If yours is not here, just ask.
         </p>
       </div>
 

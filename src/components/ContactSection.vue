@@ -8,10 +8,10 @@ import { contactLinks } from '../data/contact'
       <!-- Section Header -->
       <div class="text-center mb-16 reveal-element">
         <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
-          Let's Work Together
+          Let's Talk
         </h2>
         <p class="text-lg sm:text-xl text-coffee-300 max-w-2xl mx-auto">
-          Have a project in mind? Message me on WhatsApp or find me on LinkedIn and GitHub
+          Tell us about your project and we will get back to you. [RESPONSE TIME - Hakim] We are open for client projects. Message us on WhatsApp to get started.
         </p>
       </div>
 

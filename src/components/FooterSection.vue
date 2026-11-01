@@ -1,10 +1,10 @@
 <script setup>
 import { contactLinks } from '../data/contact'
 
-const currentYear = new Date().getFullYear()
-
 const quickLinks = [
   { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Work', href: '#work' },
   { name: 'Services', href: '#services' }
 ]
 
@@ -26,7 +26,7 @@ const resources = [
             <span class="text-white font-bold text-xl">Santai Kuppi</span>
           </div>
           <p class="text-coffee-300 text-sm leading-relaxed">
-            Professional web developer creating custom solutions and stunning portfolio websites. Let's bring your vision to life.
+            Santai Kuppi. Websites and web apps by Muhammad Hakim bin Husin and the Santai Kuppi team.
           </p>
         </div>
 
@@ -81,10 +81,10 @@ const resources = [
       <!-- Bottom Bar -->
       <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-coffee-400 text-sm text-center md:text-left">
-          © {{ currentYear }} Santai Kuppi. All rights reserved.
+          © [YEAR - Hakim confirm] Santai Kuppi.
         </p>
         <p class="text-coffee-400 text-sm text-center md:text-right">
-          Built with <i class="fas fa-heart text-red-500"></i> using Vue.js & Tailwind CSS
+          Built with Vue & Tailwind.
         </p>
       </div>
     </div>
