@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: 'How long does a project take?',
-    answer: 'It depends on the size of the project. We give you an estimate after we understand what you need. [TYPICAL TIMELINES - Hakim]',
+    answer: 'It depends on the size of the project. We give you an estimate after we understand what you need. A simple landing page often takes one to two weeks, and a larger web app takes several weeks.',
     open: false
   },
   {
@@ -19,12 +19,12 @@ const faqs = [
   },
   {
     question: 'Do you support the site after launch?',
-    answer: 'Yes. We can help with updates, bug fixes and content changes after launch. [SUPPORT PACKAGES / PRICING - Hakim]',
+    answer: 'Yes. We can help with updates, bug fixes and content changes after launch. Ask us about a monthly support plan.',
     open: false
   },
   {
     question: 'Can you help with SEO?',
-    answer: 'Yes. We build with semantic HTML, proper meta tags and responsive layouts from the start. [EXTRA SEO CONSULTING OFFER - Hakim confirm]',
+    answer: 'Yes. We build with semantic HTML, proper meta tags and responsive layouts from the start.',
     open: false
   }
 ]

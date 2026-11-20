@@ -1,14 +1,13 @@
 <script setup>
-// Placeholders stay exactly as written until Hakim supplies the text.
 const profile = {
   name: 'Muhammad Hakim bin Husin (Hakim)',
   title: 'Technical Lead, Ondewei',
-  location: '[LOCATION - Hakim]',
+  location: 'Malaysia (open to remote work)',
   bio: [
-    'Hi, I am Hakim. I build websites and web apps under the Santai Kuppi name. [ONE LINE ON BACKGROUND - Hakim]',
-    'I do not work alone. Santai Kuppi runs with an AI staff, a set of specialised assistants for planning, design, development and testing, and I review everything before it ships. [WHY SANTAI KUPPI / PERSONAL LINE - Hakim]'
+    'Hi, I am Hakim. I build websites and web apps under the Santai Kuppi name. I am the Technical Lead at Ondewei (ondewei.com), where I build and ship production web apps end to end.',
+    'I do not work alone. Santai Kuppi runs with an AI staff, a set of specialised assistants for planning, design, development and testing, and I review everything before it ships. Santai Kuppi is where I take on client work, from landing pages to custom Laravel systems.'
   ],
-  stack: ['[STACK - Hakim confirm]']
+  stack: ['Laravel', 'PHP', 'Vue 3', 'Next.js', 'Tailwind CSS', 'DevOps']
 }
 </script>
 

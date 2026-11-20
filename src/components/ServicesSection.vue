@@ -28,7 +28,7 @@ const services = [
   {
     icon: 'fa-wrench',
     title: 'Maintenance & Support',
-    description: 'We stay available after launch for updates, fixes and content changes. [SUPPORT TERMS - Hakim]'
+    description: 'We stay available after launch for updates, fixes and content changes. We aim for long-term trust, so you have someone who knows your project.'
   }
 ]
 </script>

@@ -11,7 +11,7 @@ import { contactLinks } from '../data/contact'
           Let's Talk
         </h2>
         <p class="text-lg sm:text-xl text-coffee-300 max-w-2xl mx-auto">
-          Tell us about your project and we will get back to you. [RESPONSE TIME - Hakim] We are open for client projects. Message us on WhatsApp to get started.
+          Tell us about your project and we will get back to you. We usually reply within one business day. We are open for client projects. Message us on WhatsApp to get started.
         </p>
       </div>
 

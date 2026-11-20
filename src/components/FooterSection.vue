@@ -81,7 +81,7 @@ const resources = [
       <!-- Bottom Bar -->
       <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-coffee-400 text-sm text-center md:text-left">
-          © [YEAR - Hakim confirm] Santai Kuppi.
+          © 2026 Santai Kuppi.
         </p>
         <p class="text-coffee-400 text-sm text-center md:text-right">
           Built with Vue & Tailwind.

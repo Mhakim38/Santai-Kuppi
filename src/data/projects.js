@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Wedding Wall',
-    description: 'A web app built with Next.js, Prisma and Supabase, with S3 storage, QR codes and push notifications. [PURPOSE ONE-LINER - Hakim confirm]',
+    description: 'A web app built with Next.js, Prisma and Supabase, with S3 storage, QR codes and push notifications. A real-time wedding photo gallery where guests join with an invitation code, upload photos and browse them together.',
     tags: ['Next.js', 'React', 'Prisma', 'Supabase', 'S3', 'Web Push'],
     links: { live: 'https://wedding-wall.vercel.app', github: 'https://github.com/Mhakim38/wedding-wall' }
   },
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: 'pastelfilmkl.com',
-    description: '[DESCRIPTION - Hakim]',
+    description: 'A landing page I built for Pastel Films, a wedding photographer and videographer in Kuala Lumpur.',
     tags: [],
     links: { live: 'https://pastelfilmkl.com', github: null }
   },
