@@ -1,0 +1,698 @@
+{
+ "_note": "Portfolio cards. Source of truth: _competition-2026-11/portfolio-update/facts.json (VERIFIED and VERIFIED-FROM-NOTES only). ASK-HAKIM items are left out; when Hakim answers ask-list.md, edit this file (role, stats, detail, name) and rebuild. No code change needed.",
+ "owner": {
+  "name": "Muhammad Hakim bin Husin",
+  "called": "Hakim",
+  "title": "Technical Lead, Ondewei",
+  "github": "https://github.com/Mhakim38",
+  "linkedin": "https://www.linkedin.com/in/muhammad-hakim-bin-husin-0333a1344",
+  "phone": "+601117857466"
+ },
+ "projects": [
+  {
+   "id": "ondw",
+   "group": "work",
+   "kind": "own",
+   "name": "Ondewei (ONDW)",
+   "when": "Dec 2025 - Nov 2026",
+   "line": "A campus food-delivery web app, ordered by chat.",
+   "stack": [
+    "Laravel 10",
+    "Alpine.js",
+    "Tailwind CSS",
+    "MySQL",
+    "PWA web push"
+   ],
+   "role": "Technical Lead and main developer",
+   "stats": [
+    {
+     "n": 968,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "my commits",
+     "source": "git history (git shortlog), of 1038 commits in the repo"
+    },
+    {
+     "n": 103,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "test files",
+     "source": "find tests in the repo"
+    },
+    {
+     "n": null,
+     "dec": 0,
+     "pre": "v1.11.3",
+     "suf": "",
+     "label": "app version",
+     "source": "version.json"
+    }
+   ],
+   "about": [
+    "A campus food-delivery web app (PWA) where students order by chat, pay by DuitNow QR and message a student rider until delivery.",
+    "It has four roles (customer, vendor, rider, admin) and is live at ondewei.my."
+   ],
+   "detail": [
+    "Built live order tracking for vendors and riders.",
+    "Built customer and rider chat, push notifications and delivery proof with rider GPS.",
+    "Integrated DuitNow QR checkout and added a self-pickup flow.",
+    "Found the cause of production slowness and rolled out skeleton loading site-wide."
+   ],
+   "slogan": null
+  },
+  {
+   "id": "santai",
+   "group": "work",
+   "kind": "own",
+   "name": "Santai Kuppi",
+   "when": "Aug 2025 - Nov 2026",
+   "line": "My studio, where web projects for clients are built.",
+   "stack": [
+    "Vue 3.5",
+    "Vite 7",
+    "Tailwind CSS 3.4"
+   ],
+   "role": "Owner",
+   "stats": [
+    {
+     "n": 24,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "my commits",
+     "source": "git history (git shortlog); 8 more by a Copilot bot"
+    },
+    {
+     "n": 13,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "Vue components",
+     "source": "find src -name *.vue"
+    }
+   ],
+   "about": [
+    "My studio site and organisation, where web projects for clients are built.",
+    "The current site is a Vue 3 build being moved to a home server."
+   ],
+   "detail": [],
+   "slogan": null
+  },
+  {
+   "id": "institute",
+   "group": "work",
+   "kind": "own",
+   "name": "Institute staff-management system",
+   "when": "Sep - Nov 2026",
+   "line": "A staff-management portal for an institute (client name withheld).",
+   "stack": [
+    "Laravel 12",
+    "Livewire 3",
+    "Flux UI",
+    "Tailwind CSS 4",
+    "PHPUnit 11"
+   ],
+   "role": "Sole developer",
+   "stats": [
+    {
+     "n": 62,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "commits",
+     "source": "git history, all by me"
+    },
+    {
+     "n": 29,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "test files",
+     "source": "find tests in the repo"
+    },
+    {
+     "n": 12,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "requirements",
+     "source": "requirements coverage notes: 12 requirements mapped to navigation"
+    }
+   ],
+   "about": [
+    "A staff-management portal built for an institute (client name withheld).",
+    "It handles staff records and role-based access, as a working prototype used to gather the client's requirements."
+   ],
+   "detail": [
+    "Built a runnable prototype in days so the client could react to something real while requirements were still forming."
+   ],
+   "slogan": null
+  },
+  {
+   "id": "apjksm",
+   "group": "work",
+   "kind": "ft",
+   "name": "AP JKSM",
+   "when": "Sep 2025 - Oct 2026",
+   "line": "A document publication and management system.",
+   "stack": [
+    "Laravel 10",
+    "Livewire 3",
+    "Bootstrap 5",
+    "Vite 5",
+    "Full-text search"
+   ],
+   "about": [
+    "A document publication and management system, built at 2Q Alliance.",
+    "It covers publishing workflows, search and document export."
+   ],
+   "role": null,
+   "stats": [],
+   "detail": [],
+   "slogan": null
+  },
+  {
+   "id": "mpaj",
+   "group": "work",
+   "kind": "ft",
+   "name": "MPAJ iComm",
+   "when": "Aug 2023 - Oct 2026",
+   "line": "A citizen-service and internal management platform.",
+   "stack": [
+    "Laravel 10",
+    "Livewire 2",
+    "Laravel Modules",
+    "Spatie Permission",
+    "Vite 4"
+   ],
+   "about": [
+    "A citizen-service and internal management platform, built at 2Q Alliance.",
+    "It serves the public with online services and internal staff with admin and workflow modules."
+   ],
+   "role": null,
+   "stats": [],
+   "detail": [],
+   "slogan": null
+  },
+  {
+   "id": "efokus",
+   "group": "work",
+   "kind": "ft",
+   "name": "eFokus",
+   "when": "Apr - Oct 2026",
+   "line": "An analytics dashboard.",
+   "stack": [
+    "Laravel 12",
+    "Livewire 3",
+    "Flux UI",
+    "Tailwind CSS 4",
+    "Chart.js"
+   ],
+   "about": [
+    "An analytics dashboard, built at 2Q Alliance.",
+    "It is built on Laravel with charts and data import and export."
+   ],
+   "role": null,
+   "stats": [],
+   "detail": [],
+   "slogan": null
+  },
+  {
+   "id": "mygaji",
+   "group": "work",
+   "kind": "own",
+   "name": "MyGaji",
+   "when": "Jul - Aug 2026",
+   "line": "A payroll tool rebuilt as a web app, live and self-hosted.",
+   "stack": [
+    "Laravel 12",
+    "Alpine.js",
+    "Tailwind CSS",
+    "MySQL 8",
+    "Docker"
+   ],
+   "stats": [
+    {
+     "n": 103,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "my commits",
+     "source": "git history (git shortlog), of 115 in the repo"
+    },
+    {
+     "n": 9,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "test files",
+     "source": "find tests in the repo"
+    },
+    {
+     "n": 49,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "Blade views",
+     "source": "find resources/views"
+    }
+   ],
+   "about": [
+    "A single-admin payroll tool that replaces an older Firebase and Capacitor mobile app with a Laravel and MySQL web app.",
+    "It is live and self-hosted on a home server."
+   ],
+   "detail": [
+    "Moved a live payroll system, code-frozen for about 14 months, to a maintainable web app that keeps salary history."
+   ],
+   "role": null,
+   "slogan": null
+  },
+  {
+   "id": "etams",
+   "group": "work",
+   "kind": "ft",
+   "name": "eTAMS",
+   "when": "Oct 2023 - Dec 2025",
+   "line": "A staff attendance and time-management system.",
+   "stack": [
+    "Laravel 10",
+    "Livewire 3",
+    "Bootstrap 5",
+    "Sass",
+    "Vite 4"
+   ],
+   "about": [
+    "A staff attendance and time-management system, built at 2Q Alliance."
+   ],
+   "role": null,
+   "stats": [],
+   "detail": [],
+   "slogan": null
+  },
+  {
+   "id": "penjuru",
+   "name": "A software studio site concept (fictional)",
+   "slogan": "Show the evidence",
+   "when": "Nov 2026",
+   "line": "Every claim on the page says what backs it.",
+   "stack": [
+    "TypeScript",
+    "Vite",
+    "GSAP",
+    "Ink-wash footer",
+    "Fontsource"
+   ],
+   "stats": [
+    {
+     "n": 1076,
+     "dec": 0,
+     "pre": "",
+     "suf": " ms",
+     "label": "LCP, throttled phone",
+     "source": "measured in the competition gate report (R5b T4)"
+    },
+    {
+     "n": 0,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "layout shift (CLS)",
+     "source": "measured in the competition gate report (R5b T5)"
+    },
+    {
+     "n": 0,
+     "dec": 2,
+     "pre": "",
+     "suf": "%",
+     "label": "dropped frames at 4x CPU",
+     "source": "measured in the competition gate report (R5b T5)"
+    }
+   ],
+   "about": [
+    "A corporate website concept for an invented software studio, built to show how a credible company site handles evidence and claims.",
+    "Everything on it is a labelled sample; it is clearly a fictional company."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": []
+  },
+  {
+   "id": "pastel",
+   "name": "A wedding studio site concept",
+   "slogan": "The Contact Sheet",
+   "when": "Nov 2026",
+   "line": "A photographer and videographer site, shaped like a contact sheet.",
+   "stack": [
+    "TypeScript",
+    "Vite",
+    "Instrument Sans",
+    "Instrument Serif",
+    "Fontsource"
+   ],
+   "stats": [
+    {
+     "n": 996,
+     "dec": 0,
+     "pre": "",
+     "suf": " ms",
+     "label": "LCP, throttled phone",
+     "source": "measured in the competition gate report (R5b S7)"
+    },
+    {
+     "n": 0,
+     "dec": 2,
+     "pre": "",
+     "suf": "%",
+     "label": "dropped frames at 4x CPU",
+     "source": "measured in the competition gate report (R5b S8)"
+    }
+   ],
+   "about": [
+    "A concept revamp of a wedding photographer and videographer site, shaped like a contact sheet.",
+    "No photos are shown here: public use needs the studio's and the couples' OK."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": []
+  },
+  {
+   "id": "apb",
+   "name": "Ayam Penyet Best revamp",
+   "slogan": "Penyet!",
+   "when": "Nov 2026",
+   "line": "A landing page concept for one mall branch, built from the food and the place.",
+   "stack": [
+    "TypeScript",
+    "Vite",
+    "Module worker art",
+    "Lilita One",
+    "Fontsource"
+   ],
+   "stats": [
+    {
+     "n": 924,
+     "dec": 0,
+     "pre": "",
+     "suf": " ms",
+     "label": "LCP, throttled phone",
+     "source": "measured in the competition gate report (R4b A7)"
+    },
+    {
+     "n": 0,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "layout shift (CLS)",
+     "source": "measured in the competition gate report (R4b A7)"
+    },
+    {
+     "n": 156,
+     "dec": 0,
+     "pre": "",
+     "suf": " KB",
+     "label": "cold load",
+     "source": "measured in the competition gate report (R4b A11)"
+    }
+   ],
+   "about": [
+    "A concept revamp of a restaurant landing page for one mall branch in Terengganu, built from the food and the place.",
+    "Unverified facts, halal status included, are shown as to be confirmed with the owner."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": []
+  },
+  {
+   "id": "company",
+   "name": "A company site concept",
+   "slogan": "You are the order",
+   "when": "Nov 2026",
+   "line": "An information-heavy company site for three audiences.",
+   "stack": [
+    "TypeScript",
+    "Vite",
+    "GSAP",
+    "Outfit and Figtree",
+    "Fontsource"
+   ],
+   "stats": [
+    {
+     "n": 760,
+     "dec": 0,
+     "pre": "",
+     "suf": " ms",
+     "label": "LCP, throttled phone",
+     "source": "measured in the competition gate report (R4b O7)"
+    },
+    {
+     "n": 0.0004,
+     "dec": 4,
+     "pre": "",
+     "suf": "",
+     "label": "layout shift (CLS)",
+     "source": "measured in the competition gate report (R4b O7)"
+    },
+    {
+     "n": 0.04,
+     "dec": 2,
+     "pre": "",
+     "suf": "%",
+     "label": "dropped frames at 4x CPU",
+     "source": "measured in the competition gate report (R4b O8)"
+    }
+   ],
+   "about": [
+    "A company website concept with an information-heavy structure for students, cafes and riders.",
+    "It reuses the live site's colours and fonts and marks unverified claims as drafts."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": []
+  },
+  {
+   "id": "creator",
+   "name": "A creator's site concept",
+   "slogan": "Slow Down",
+   "when": "Nov 2026",
+   "line": "Built around a speed sign, in two versions.",
+   "stack": [
+    "TypeScript",
+    "Vite",
+    "GSAP",
+    "ASCII footer art",
+    "Fontsource"
+   ],
+   "stats": [
+    {
+     "n": 720,
+     "dec": 0,
+     "pre": "",
+     "suf": " ms",
+     "label": "LCP, throttled phone (v2)",
+     "source": "measured in the competition gate report (PV2 V34)"
+    },
+    {
+     "n": 0.0007,
+     "dec": 4,
+     "pre": "",
+     "suf": "",
+     "label": "layout shift (CLS, v2)",
+     "source": "measured in the competition gate report (PV2 V34)"
+    },
+    {
+     "n": 0.14,
+     "dec": 2,
+     "pre": "",
+     "suf": "%",
+     "label": "dropped frames at 4x CPU (v2)",
+     "source": "measured in the competition gate report (PV2 V35)"
+    }
+   ],
+   "about": [
+    "A personalised concept site for a content creator, built around a speed-sign and slow-down idea, in two versions.",
+    "It is a design concept, not affiliated with or endorsed by the creator."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": []
+  },
+  {
+   "id": "cafe",
+   "name": "A cafe site concept",
+   "slogan": "Park the Rover",
+   "when": "Nov 2026",
+   "line": "Themed around travelling and parking a rover.",
+   "stack": [
+    "TypeScript",
+    "Vite",
+    "IBM Plex",
+    "Young Serif",
+    "Fontsource"
+   ],
+   "stats": [
+    {
+     "n": 964,
+     "dec": 0,
+     "pre": "",
+     "suf": " ms",
+     "label": "LCP, throttled phone",
+     "source": "measured in the competition gate report (R3b RB13)"
+    },
+    {
+     "n": 0,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "layout shift (CLS)",
+     "source": "measured in the competition gate report (R3b RB13)"
+    },
+    {
+     "n": 234,
+     "dec": 0,
+     "pre": "",
+     "suf": " KB",
+     "label": "first load",
+     "source": "measured in the competition gate report (R3b RB13)"
+    }
+   ],
+   "about": [
+    "A personalised concept site for an aesthetic cafe, themed around travelling and parking a rover.",
+    "It is a design concept, not affiliated with or endorsed by the cafe."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": []
+  },
+  {
+   "id": "yappy",
+   "group": "side",
+   "kind": "own",
+   "name": "Yappy MemoryCore",
+   "when": "Aug 2025 - Nov 2026",
+   "line": "My own memory system, built on a public template.",
+   "stack": [
+    "Markdown files"
+   ],
+   "role": "Owner and main contributor",
+   "stats": [
+    {
+     "n": 559,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "my commits",
+     "source": "git history (git shortlog), of 613 on the branch"
+    },
+    {
+     "n": 166,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "Markdown files",
+     "source": "find -name *.md"
+    },
+    {
+     "n": 10,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "library folders",
+     "source": "ls library-items"
+    }
+   ],
+   "about": [
+    "A memory system for an AI coding companion, using plain Markdown files as the database so the assistant remembers preferences, decisions and project context.",
+    "The repo is a fork of a public memory template with my own additions on a personal branch."
+   ],
+   "detail": [],
+   "slogan": null
+  },
+  {
+   "id": "wedding-wall",
+   "group": "side",
+   "kind": "own",
+   "name": "Wedding Wall",
+   "when": "Mar - May 2026",
+   "line": "A real-time photo gallery for guests at my own wedding.",
+   "stack": [
+    "Next.js 16",
+    "React 19",
+    "Prisma",
+    "Supabase",
+    "AWS S3"
+   ],
+   "role": "Sole developer, and a user",
+   "stats": [
+    {
+     "n": 77,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "commits",
+     "source": "git history, all mine"
+    },
+    {
+     "n": 4,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "data models",
+     "source": "prisma/schema.prisma"
+    }
+   ],
+   "about": [
+    "A real-time photo gallery for guests at my own wedding: guests join with an invitation code and upload photos to a shared wall.",
+    "It runs as an installable PWA on Vercel."
+   ],
+   "detail": [],
+   "slogan": null
+  },
+  {
+   "id": "apb-lp",
+   "group": "side",
+   "kind": "own",
+   "name": "Ayam Penyet Best landing page",
+   "when": "Dec 2025",
+   "line": "A restaurant landing page with a menu carousel and a booking form.",
+   "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Bootstrap 5"
+   ],
+   "role": "Sole developer",
+   "stats": [
+    {
+     "n": 69,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "commits",
+     "source": "git history, all mine"
+    },
+    {
+     "n": 17,
+     "dec": 0,
+     "pre": "",
+     "suf": "",
+     "label": "files",
+     "source": "git ls-files"
+    }
+   ],
+   "about": [
+    "A landing page for a restaurant branch at Mayang Mall, Terengganu, with a menu carousel and a booking form.",
+    "Its commits span three days, Dec 28 to 30, 2025."
+   ],
+   "detail": [],
+   "slogan": null
+  }
+ ]
+}
