@@ -4,6 +4,7 @@
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { S, type Project, type Stat, when, tag, fmtStat, GROUP } from './state.ts';
 import { lerp, clamp } from './vendor/line-art/motion.ts';
+import { openTry } from './tryit.ts';
 
 const STEP = (100 * Math.PI) / 180;
 const SHOWN = 2.6; // cards further than this from the front are hidden
@@ -41,7 +42,15 @@ export function cardBody(p: Project, uid: string) {
   const box = el('div', 'more-box'); box.id = uid; box.hidden = true;
   p.about.forEach((t) => box.appendChild(el('p', '', t)));
   if (p.detail.length) { const ul = el('ul', 'detail'); p.detail.forEach((t) => ul.appendChild(el('li', '', t))); box.appendChild(ul); }
-  frag.append(more, box);
+  const acts = el('div', 'acts');
+  if (p.try) {
+    const t = el('button', 'try-btn mono', 'Try it here');
+    t.type = 'button'; t.setAttribute('aria-haspopup', 'dialog'); t.setAttribute('aria-label', `Try it here: ${p.name}`);
+    t.addEventListener('click', () => openTry(p, t));
+    acts.appendChild(t);
+  }
+  acts.appendChild(more);
+  frag.append(acts, box);
   return frag;
 }
 /** count a card's numbers up once, 600ms, ease out */
@@ -107,6 +116,10 @@ export function makeCards(projects: Project[]) {
     c.classList.toggle('open', open);
     size();
   }));
+  // pressed mid-glide: land on that card first (capture runs before the open), so you come back to it
+  cards.forEach((c, i) => c.addEventListener('click', (e) => {
+    if (st.isActive && (e.target as Element).closest('.try-btn')) window.scrollTo({ top: yOf(i), behavior: 'instant' });
+  }, true));
   const shades = cards.map((c) => c.querySelector('.shade') as HTMLElement);
   (section.querySelector('.count-all') as HTMLElement).textContent = String(n).padStart(2, '0');
 
@@ -140,7 +153,7 @@ export function makeCards(projects: Project[]) {
   }
   // settle on the nearest card once scrolling stops, so a card always reads cleanly
   ScrollTrigger.addEventListener('scrollEnd', () => {
-    if (S.reduce || dragging || !st.isActive) return;
+    if (S.reduce || S.paused || dragging || !st.isActive) return;
     const i = Math.round(target);
     if (Math.abs(scrollY - yOf(i)) > 3) jump(i, false);
   });

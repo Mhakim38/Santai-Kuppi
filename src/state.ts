@@ -17,6 +17,7 @@ export const S = {
   kite: { x: 0, y: 0, a: 0 },         // kite bridle, screen px, angle rad
   ptr: { x: -1, y: -1, on: false },   // last fine pointer position
   t: 0,
+  paused: false,                      // true while a site is open over the page
 };
 
 /** a verified number: n counts up once (null = show pre as a fixed label), with its source for the title */
@@ -26,11 +27,12 @@ export interface Project {
   id: string; group: 'work' | 'side'; kind: 'own' | 'ft' | 'concept';
   name: string; slogan: string | null; when: string; line: string;
   stack: string[]; role: string | null; stats: Stat[]; about: string[]; detail: string[];
+  try?: string; // a live address that allows being framed by this site
 }
 
 /** the data writes ranges as "A - B"; the page reads "A to B". */
 export const when = (s: string): string => s.replace(/\s+-\s+/g, ' to ');
-export const tag = (p: Project): string => (p.kind === 'ft' ? '2Q Alliance project' : p.kind === 'concept' ? 'Concept, private preview' : 'Own work');
+export const tag = (p: Project): string => (p.kind === 'ft' ? '2Q Alliance project' : p.kind === 'concept' ? (p.try ? 'Concept, live demo' : 'Concept, private preview') : 'Own work');
 export const GROUP = { work: 'Work', side: 'Side projects' } as const;
 export const fmtStat = (s: Stat, v = s.n ?? 0): string => (s.n === null ? s.pre : `${s.pre}${v.toFixed(s.dec)}${s.suf}`);
 export const endYear = (p: Project): number => {

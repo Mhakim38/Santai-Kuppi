@@ -292,7 +292,59 @@
    "slogan": null
   },
   {
+   "id": "lastbrick",
+   "try": "https://lastbrick.pages.dev/",
+   "name": "The Last Brick, a phone fan tribute",
+   "slogan": null,
+   "when": "Nov 2026",
+   "line": "An unofficial fan tribute to the indestructible phone, drawn in code.",
+   "stack": [
+    "Three.js",
+    "GSAP",
+    "Lenis",
+    "Pixel glyph text"
+   ],
+   "stats": [],
+   "about": [
+    "A fan tribute with a 3D handset made from procedural geometry and a green pixel screen.",
+    "Unofficial fan tribute, not affiliated with Nokia / HMD."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": [
+    "Snake and T9 typing play on the 3D handset screen."
+   ]
+  },
+  {
+   "id": "turnell",
+   "try": "https://turnell.pages.dev/",
+   "name": "Turnell, a pepper mill concept",
+   "slogan": null,
+   "when": "Nov 2026",
+   "line": "A walnut pepper mill for a fictional brand, shown in live 3D as you scroll.",
+   "stack": [
+    "Three.js",
+    "GSAP",
+    "Lenis",
+    "Inter",
+    "ASCII footer art"
+   ],
+   "stats": [],
+   "about": [
+    "A concept demo: the mill is built entirely in Three.js, with no model files.",
+    "Turnell and the M-01 are fictional. No product is for sale."
+   ],
+   "kind": "concept",
+   "group": "side",
+   "role": null,
+   "detail": [
+    "Twist the head and grounds fall, feeding the ASCII footer."
+   ]
+  },
+  {
    "id": "penjuru",
+   "try": "https://penjuru-70u.pages.dev/",
    "name": "A software studio site concept (fictional)",
    "slogan": "Show the evidence",
    "when": "Nov 2026",
@@ -617,6 +669,7 @@
   },
   {
    "id": "wedding-wall",
+   "try": "https://wedding-wall.vercel.app/",
    "group": "side",
    "kind": "own",
    "name": "Wedding Wall",
@@ -657,6 +710,7 @@
   },
   {
    "id": "apb-lp",
+   "try": "https://apbmayangmall.santaikuppi.com/",
    "group": "side",
    "kind": "own",
    "name": "Ayam Penyet Best landing page",

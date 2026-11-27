@@ -64,7 +64,7 @@ document.documentElement.addEventListener('pointerleave', () => { S.ptr.on = fal
 addEventListener('pointerdown', (e) => {
   if (S.reduce || e.button !== 0) return;
   const t = e.target as Element;
-  if (t.closest('a, button, .helix')) return;
+  if (t.closest('a, button, .helix, dialog')) return;
   if (rope.pluck(e.clientX, e.clientY)) return;
   if (t.closest('#sea')) ripple(e.clientX, e.clientY);
   else if (!S.coarse && e.pointerType === 'mouse') rope.tug();
@@ -77,6 +77,7 @@ if (!S.reduce) {
     raf = requestAnimationFrame(tick);
     const dt = Math.min(1 / 30, Math.max(1 / 240, (now - prev) / 1000));
     prev = now;
+    if (S.paused) return; // a site is open over the page: leave it the frame budget
     S.t += dt;
     const y = scrollY;
     S.vel = lerp(S.vel, (y - lastY) / dt, 0.18);
