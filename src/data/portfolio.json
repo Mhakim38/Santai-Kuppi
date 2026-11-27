@@ -529,6 +529,7 @@
   },
   {
    "id": "creator",
+   "try": "https://hakim-parker-concept.pages.dev/",
    "name": "A creator's site concept",
    "slogan": "Slow Down",
    "when": "Nov 2026",
@@ -573,10 +574,11 @@
    "kind": "concept",
    "group": "side",
    "role": null,
-   "detail": []
+   "detail": ["The live demo shows version 2."]
   },
   {
    "id": "cafe",
+   "try": "https://rover-coffee-concept.pages.dev/",
    "name": "A cafe site concept",
    "slogan": "Park the Rover",
    "when": "Nov 2026",
